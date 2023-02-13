@@ -13,9 +13,11 @@
 		2B400A2A2994C256006DF675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B400A282994C256006DF675 /* Main.storyboard */; };
 		2B400A2C2994C258006DF675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B400A2B2994C258006DF675 /* Assets.xcassets */; };
 		2B400A2F2994C258006DF675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B400A2D2994C258006DF675 /* LaunchScreen.storyboard */; };
+		88ADB42E006EFD92368AC058 /* Pods_Moneta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4E06A34FD09EF37F02EF95 /* Pods_Moneta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2022A5606DA3B2438DFC85D5 /* Pods-Moneta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moneta.debug.xcconfig"; path = "Target Support Files/Pods-Moneta/Pods-Moneta.debug.xcconfig"; sourceTree = "<group>"; };
 		2B400A1F2994C256006DF675 /* Moneta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moneta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B400A222994C256006DF675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B400A242994C256006DF675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2B400A2B2994C258006DF675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B400A2E2994C258006DF675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B400A302994C258006DF675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4E06A34FD09EF37F02EF95 /* Pods_Moneta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moneta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36F1D00E0C42C51AE23771F /* Pods-Moneta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moneta.release.xcconfig"; path = "Target Support Files/Pods-Moneta/Pods-Moneta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88ADB42E006EFD92368AC058 /* Pods_Moneta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2B400A212994C256006DF675 /* Moneta */,
 				2B400A202994C256006DF675 /* Products */,
+				9B163408642F460415A26ADF /* Pods */,
+				6A883B2BF66659965F2F59CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Moneta;
 			sourceTree = "<group>";
 		};
+		6A883B2BF66659965F2F59CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E06A34FD09EF37F02EF95 /* Pods_Moneta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B163408642F460415A26ADF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2022A5606DA3B2438DFC85D5 /* Pods-Moneta.debug.xcconfig */,
+				F36F1D00E0C42C51AE23771F /* Pods-Moneta.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B400A332994C258006DF675 /* Build configuration list for PBXNativeTarget "Moneta" */;
 			buildPhases = (
+				B4794B88A334889E2A681C6E /* [CP] Check Pods Manifest.lock */,
 				2B400A1B2994C256006DF675 /* Sources */,
 				2B400A1C2994C256006DF675 /* Frameworks */,
 				2B400A1D2994C256006DF675 /* Resources */,
+				DD842DE2DCD351A804D0B01E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4794B88A334889E2A681C6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moneta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD842DE2DCD351A804D0B01E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moneta/Pods-Moneta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moneta/Pods-Moneta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moneta/Pods-Moneta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B400A1B2994C256006DF675 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		2B400A342994C258006DF675 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2022A5606DA3B2438DFC85D5 /* Pods-Moneta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		2B400A352994C258006DF675 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36F1D00E0C42C51AE23771F /* Pods-Moneta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
